@@ -34,8 +34,11 @@
               {"glob": "**/*", "input": "src/main/webapp/public"}
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/main/webapp/styles.scss"
-            ],
+            ]
+          ,
             "stylePreprocessorOptions": {
               "sass": {
                 "silenceDeprecations": ["import"]
@@ -110,8 +113,11 @@
               {"glob": "**/*", "input": "src/main/webapp/public"}
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/main/webapp/styles.scss"
-            ],
+            ]
+          ,
             "scripts": []
           }
         }

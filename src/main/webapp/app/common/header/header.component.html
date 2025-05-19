@@ -1,33 +1,41 @@
-<header class="bg-light">
+<header class="bg-light shadow-sm">
     <div class="container">
-        <nav class="navbar navbar-light navbar-expand-md">
-            <a routerLink="/" class="navbar-brand">
-                <img ngSrc="logo.png" i18n-alt="@@app.title" alt="GestionCreditBancaire" width="30" height="30" class="d-inline-block align-top" />
-                <span class="ps-1" i18n="@@app.title">GestionCreditBancaire</span>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <!-- Brand Logo & Title -->
+            <a routerLink="/" class="navbar-brand d-flex align-items-center">
+
+                <span class="ps-2 fw-bold" i18n="@@app.title">GestionCreditBancaire</span>
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
-                    i18n-aria-label="@@navigation.toggle" aria-label="Toggle navigation" aria-controls="navbarToggle" aria-expanded="false">
+
+            <!-- Toggler for mobile -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarToggle">
+
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="navbar-item">
+                    <li class="nav-item">
                         <a routerLink="/" class="nav-link" i18n="@@navigation.home">Home</a>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarEntitiesLink"
-                                aria-expanded="false" i18n="@@navigation.entities">Entities</button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarEntitiesLink">
-                            <li><a routerLink="/statutCredits" class="dropdown-item" i18n="@@statutCredit.list.headline">Statut Credits</a></li>
-                            <li><a routerLink="/typeRemboursements" class="dropdown-item" i18n="@@typeRemboursement.list.headline">Type Remboursements</a></li>
-                            <li><a routerLink="/clients" class="dropdown-item" i18n="@@client.list.headline">Clients</a></li>
-                            <li><a routerLink="/credits" class="dropdown-item" i18n="@@credit.list.headline">Credits</a></li>
-                            <li><a routerLink="/creditPersonnels" class="dropdown-item" i18n="@@creditPersonnel.list.headline">Credit Personnels</a></li>
-                            <li><a routerLink="/creditProfessionnels" class="dropdown-item" i18n="@@creditProfessionnel.list.headline">Credit Professionnels</a></li>
-                            <li><a routerLink="/remboursements" class="dropdown-item" i18n="@@remboursement.list.headline">Remboursements</a></li>
-                            <li><a routerLink="/creditImmobiliers" class="dropdown-item" i18n="@@creditImmobilier.list.headline">Credit Immobiliers</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a routerLink="/clients" class="nav-link" i18n="@@client.list.headline">Clients</a>
                     </li>
+                    <li class="nav-item">
+                        <a routerLink="/credits" class="nav-link" i18n="@@credit.list.headline">Crédits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/remboursements" class="nav-link" i18n="@@remboursement.list.headline">Remboursements</a>
+                    </li>
+
                 </ul>
             </div>
         </nav>
