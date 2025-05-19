@@ -1,11 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { StatutCreditListComponent } from './statut-credit/statut-credit-list.component';
-import { StatutCreditAddComponent } from './statut-credit/statut-credit-add.component';
-import { StatutCreditEditComponent } from './statut-credit/statut-credit-edit.component';
-import { TypeRemboursementListComponent } from './type-remboursement/type-remboursement-list.component';
-import { TypeRemboursementAddComponent } from './type-remboursement/type-remboursement-add.component';
-import { TypeRemboursementEditComponent } from './type-remboursement/type-remboursement-edit.component';
+
+
 import { ClientListComponent } from './client/client-list.component';
 import { ClientAddComponent } from './client/client-add.component';
 import { ClientEditComponent } from './client/client-edit.component';
@@ -33,36 +29,8 @@ export const routes: Routes = [
     component: HomeComponent,
     title: $localize`:@@home.index.headline:Welcome to your new app!`
   },
-  {
-    path: 'statutCredits',
-    component: StatutCreditListComponent,
-    title: $localize`:@@statutCredit.list.headline:Statut Credits`
-  },
-  {
-    path: 'statutCredits/add',
-    component: StatutCreditAddComponent,
-    title: $localize`:@@statutCredit.add.headline:Add Statut Credit`
-  },
-  {
-    path: 'statutCredits/edit/:id',
-    component: StatutCreditEditComponent,
-    title: $localize`:@@statutCredit.edit.headline:Edit Statut Credit`
-  },
-  {
-    path: 'typeRemboursements',
-    component: TypeRemboursementListComponent,
-    title: $localize`:@@typeRemboursement.list.headline:Type Remboursements`
-  },
-  {
-    path: 'typeRemboursements/add',
-    component: TypeRemboursementAddComponent,
-    title: $localize`:@@typeRemboursement.add.headline:Add Type Remboursement`
-  },
-  {
-    path: 'typeRemboursements/edit/:id',
-    component: TypeRemboursementEditComponent,
-    title: $localize`:@@typeRemboursement.edit.headline:Edit Type Remboursement`
-  },
+
+
   {
     path: 'clients',
     component: ClientListComponent,
